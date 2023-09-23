@@ -60,7 +60,7 @@ jobs:
       - name: Set package name for npm
         run: |
           cp package.json package.json.bak
-          sed 's/"name": "solidity"/"name": "vscode-solidity-langserver"/' package.json.bak > package.json
+          sed 's/"name": "solidity"/"name": "@llllvvuu\/vscode-solidity-langserver"/' package.json.bak > package.json
 
       - name: Build and publish to npm
         run: npm publish --access public
